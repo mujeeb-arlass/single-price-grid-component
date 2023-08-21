@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Karla&family=Lexend+Deca&family=Merriweather&family=Montserrat&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              //Primary
+
+              cyan: "hsl(179, 62%, 43%)",
+              brightYellow: "hsl(71, 73%, 54%)",
+
+              //Neutral
+
+              lightGray: "hsl(204, 43%, 93%)",
+              grayishBlue: "hsl(218, 22%, 67%)",
+            },
+            fontFamily: {
+              sans: ["Karla",'sans-serif'],
+            },
+            screen: {
+              sm: "375px",
+              xl: "1440px",
+            },
+          },
+        },
+      };
+    </script>
+
+ 
+  
+</head>
+<body class="fontFamily-Karla">
+  <!-- Global container -->
+  <div class="flex  items-center justify-center bg-lightGray min-h-screen">
+
+    <!-- Card Container -->
+    <div class="grid grid-cols-1 rounded-2xl shadow-md md:grid-cols-2">
+
+      <!-- card 1 -->
+      <div class="grid grid-cols-1 md:col-span-2  gap-6 bg-white w-72 md:w-[36rem] p-6  rounded-t-xl">
+        <h2 class="text-cyan text-xl font-bold">Join our community</h2>
+        <p class="text-brightYellow font-bold">30-day, hassle-free money back guarantee</p>
+        <p class="text-grayishBlue text-md">Gain access to our full library of tutorials along with expert code reviews. 
+          Perfect for any developers who are serious about honing their skills.</p>
+
+      </div>
+
+      <!-- card 2 -->
+      <div class="grid grid-cols-1  gap-4 bg-cyan w-72 p-6 text-white md:rounded-bl-xl">
+        <h2 class="font-bold">Monthly Subscription</h2>
+        
+        <div class="flex flex-row items-center gap-3">
+          <p class="text-3xl font-bold">$29</p>
+
+          <p class="text-lightGray opacity-70">per month</p>
+        </div>
+        
+        
+        
+        
+        <p class="text-sm">Full access for less than $1 a day</p>
+
+        <button class="bg-brightYellow rounded-md shadow-xl py-2">Sign Up</button>
+        
+        
+
+      </div>
+
+      <!-- card 3 -->
+      <div class="grid grid-cols-1  gap-4 bg-[#4ac7c6] w-72 p-6 text-white rounded-b-xl md:rounded-br-xl md:rounded-bl-none">
+
+        <h2 class="font-bold">Why Us</h2>
+        <p class="text-lightGray">Tutorials by industry experts
+          Peer &amp; expert code review
+          Coding exercises
+          <br>Access to our GitHub repos
+          Community forum
+          Flashcard decks
+          New videos every week</p>
+
+
+
+      </div>
+
+
+    </div>
+
+  </div>
+  
+  
+  
+  
+
+
+
+
+
+
+  <!-- 
+
+  30-day, hassle-free money back guarantee
+
+  
+
+  
+
+  &dollar;29 per month
+
+  Full access for less than &dollar;1 a day
+
+  Sign Up
+
+  Why Us
+
+  Tutorials by industry experts
+  Peer &amp; expert code review
+  Coding exercises
+  Access to our GitHub repos
+  Community forum
+  Flashcard decks
+  New videos every week -->
+</body>
+</html>
